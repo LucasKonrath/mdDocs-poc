@@ -1,0 +1,7 @@
+[book]
+title = "Lucas's POC Book"
+authors = ["LucasKonrath"]
+language = "en"
+
+[output.html]
+additional-css = ["src/custom.css"]
