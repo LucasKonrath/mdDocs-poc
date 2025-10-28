@@ -23,3 +23,10 @@ public class SecurityConfig {
     }
 }
 ```
+
+## Adding filters to the chain
+| Filter Type | Place after | Already happened |
+| :----       | :---------  | :--------------- |
+| Exploit Protection | SecurityContextHolderFilter | Security context loaded |
+| Authentication Filter | LogoutFilter | Exploit protection |
+| Authorization Filter | AnonymousAuthenticationFilter | Authenticated |
