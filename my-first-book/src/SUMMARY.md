@@ -7,3 +7,6 @@
     - [Filters](architecture/filters.md)
     - [Security Filter Chain](architecture/security-filter-chain.md)
     - [Exception Translation](architecture/exception-translation.md)
+- [Authentication Architecture](authentication-architecture.md)
+    - [Security Context Holder](security-context-holder.md)
+    - [Security Context](security-context.md)
