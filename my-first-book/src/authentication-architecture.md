@@ -1,19 +1,38 @@
 # Authentication Architecture
 
-SecurityContextHolder - The SecurityContextHolder is where Spring Security stores the details of who is authenticated.
+![alt text](image-1.png)
 
-SecurityContext - is obtained from the SecurityContextHolder and contains the Authentication of the currently authenticated user.
+### AbstractAuthenticationProcessingFilter 
 
-Authentication - Can be the input to AuthenticationManager to provide the credentials a user has provided to authenticate or the current user from the SecurityContext.
+Base Filter used for authentication. This also gives a good idea of the high level flow of authentication and how pieces work together.
 
-GrantedAuthority - An authority that is granted to the principal on the Authentication (i.e. roles, scopes, etc.)
+### Authentication 
 
-AuthenticationManager - the API that defines how Spring Security’s Filters perform authentication.
+Can be the input to AuthenticationManager to provide the credentials a user has provided to authenticate or the current user from the SecurityContext.
 
-ProviderManager - the most common implementation of AuthenticationManager.
 
-AuthenticationProvider - used by ProviderManager to perform a specific type of authentication.
+### AuthenticationManager 
 
-Request Credentials with AuthenticationEntryPoint - used for requesting credentials from a client (i.e. redirecting to a log in page, sending a WWW-Authenticate response, etc.)
+The API that defines how Spring Security’s Filters perform authentication.
 
-AbstractAuthenticationProcessingFilter - a base Filter used for authentication. This also gives a good idea of the high level flow of authentication and how pieces work together.
+### ProviderManager 
+
+The most common implementation of AuthenticationManager.
+
+### AuthenticationProvider 
+
+Used by ProviderManager to perform a specific type of authentication.
+
+### SecurityContextHolder
+
+The SecurityContextHolder is where Spring Security stores the details of who is authenticated.
+
+### SecurityContext 
+
+Is obtained from the SecurityContextHolder and contains the Authentication of the currently authenticated user.
+
+
+### GrantedAuthority 
+
+An authority that is granted to the principal on the Authentication (i.e. roles, scopes, etc.)
+
