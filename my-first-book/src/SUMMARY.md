@@ -1,7 +1,5 @@
 # Summary
 
-[Spring Security](README.md)
-
 - [What is Spring Security?](what-is-spring-security.md)
 - [Filter Architecture](architecture.md)
 - [Authentication Architecture](authentication-architecture.md)

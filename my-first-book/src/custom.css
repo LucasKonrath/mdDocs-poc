@@ -1,6 +1,6 @@
-/* Custom Green Theme */
+/* Custom Green Theme - Enforced on all theme variants */
 
-/* Sidebar background */
+/* Sidebar background - green on all themes */
 .sidebar {
     background-color: #2d5016 !important;
 }
@@ -32,20 +32,15 @@
     color: #a5d6a7 !important;
 }
 
-/* Page background */
-.page {
-    background-color: #f1f8f4 !important;
-}
-
-/* Content background */
-.content {
-    background-color: #ffffff !important;
-}
-
-/* Header (top bar) */
+/* Header (top bar) - green on all themes */
 .menu-bar {
     background-color: #2d5016 !important;
     border-bottom-color: #4a7c24 !important;
+}
+
+/* Book title in menu bar */
+.menu-title {
+    color: #ffffff !important;
 }
 
 /* Menu buttons */
@@ -59,7 +54,7 @@
     background-color: #3d6b1f !important;
 }
 
-/* Links in content */
+/* Links in content - green on all themes */
 .content a {
     color: #2e7d32 !important;
 }
@@ -69,19 +64,12 @@
     color: #1b5e20 !important;
 }
 
-/* Code blocks background */
+/* Code blocks - green accents on all themes */
 .content pre {
-    background-color: #e8f5e9 !important;
     border-left: 4px solid #4a7c24 !important;
 }
 
-/* Inline code */
-.content code {
-    background-color: #e8f5e9 !important;
-    color: #1b5e20 !important;
-}
-
-/* Scrollbar */
+/* Scrollbar - green on all themes */
 ::-webkit-scrollbar-thumb {
     background-color: #4a7c24 !important;
 }
