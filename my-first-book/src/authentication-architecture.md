@@ -27,12 +27,41 @@ Used by ProviderManager to perform a specific type of authentication.
 
 The SecurityContextHolder is where Spring Security stores the details of who is authenticated.
 
+![alt text](image.png)
+
+```java
+SecurityContext context = SecurityContextHolder.createEmptyContext(); 
+Authentication authentication =
+    new TestingAuthenticationToken("username", "password", "ROLE_USER"); 
+context.setAuthentication(authentication);
+
+SecurityContextHolder.setContext(context); 
+```
+
 ### SecurityContext 
 
 Is obtained from the SecurityContextHolder and contains the Authentication of the currently authenticated user.
 
 
-### GrantedAuthority 
 
-An authority that is granted to the principal on the Authentication (i.e. roles, scopes, etc.)
+### SessionAuthenticationStrategy
+
+Executed when a user successfully authenticates to perform session-related activities. Handles session fixation protection, concurrent session control, and session registry updates.
+
+
+### RememberMeServices
+
+Generates and validates remember-me tokens that can persist authentication beyond the current session.
+
+### AuthenticationFailureHandler
+
+Called when authentication fails. Determines what to do upon auth fail, like redirecting, or returning error with specific JSON payload.
+
+### AuthenticationSuccessHandler
+
+Called when authentication succeeds. Determines what should happen after successful auth, like returning JWT token, redirecting to a specific page.
+
+### ApplicationEventPublisher
+
+Publishes application events that can be listened to by other parts of the application. Commonly used in Spring framework.
 

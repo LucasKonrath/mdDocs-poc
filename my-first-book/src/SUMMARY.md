@@ -3,10 +3,6 @@
 [Spring Security](README.md)
 
 - [What is Spring Security?](what-is-spring-security.md)
-- [Architecture](architecture.md)
-    - [Filters](architecture/filters.md)
-    - [Security Filter Chain](architecture/security-filter-chain.md)
-    - [Exception Translation](architecture/exception-translation.md)
+- [Filter Architecture](architecture.md)
 - [Authentication Architecture](authentication-architecture.md)
-    - [Security Context Holder](security-context-holder.md)
-    - [Security Context](security-context.md)
+- [Authorization Architecture](authorization-architecture.md)

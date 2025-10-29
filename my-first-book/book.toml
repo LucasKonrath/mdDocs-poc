@@ -5,3 +5,4 @@ language = "en"
 
 [output.html]
 additional-css = ["src/custom.css"]
+additional-js = ["src/lightbox.js"]
